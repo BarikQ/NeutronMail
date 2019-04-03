@@ -1,0 +1,52 @@
+/*
+              colors
+color="#5b4295" - kind of purple;
+color="#636b92" - for gradient(with purple)
+color="#fc444a" - for "Somewhere" - kind of red + pink
+color="#5e7bea" - for donate button (sky color)
+color="#36bae1" - for sky gradient
+color="#bfc5d4" - for hover
+*/
+
+@font-face{
+    font-family: TW-R;
+    src: url(assets/fonts/TitilliumWeb-Regular.ttf)
+}
+
+@font-face{
+    font-family: TW-L;
+    src: url(assets/fonts/TitilliumWeb-Light.ttf)
+}
+
+@font-face{
+    font-family: TW-EL;
+    src: url(assets/fonts/TitilliumWeb-ExtraLight.ttf)
+}
+
+@font-face{
+    font-family: TW-Bl;
+    src: url(assets/fonts/TitilliumWeb-Black.ttf)
+}
+
+@font-face{
+    font-family: Malaga;
+    src: url(assets/fonts/Malaga-Narrow-OT-Reg-Italic.htm)
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
