@@ -1,41 +1,335 @@
 /*
               colors
-color="#5b4295" - kind of purple;
-color="#636b92" - for gradient(with purple)
-color="#fc444a" - for "Somewhere" - kind of red + pink
-color="#5e7bea" - for donate button (sky color)
-color="#36bae1" - for sky gradient
-color="#bfc5d4" - for hover
+#858688 - main color?              
+#5b4295 - kind of purple;
+#636b92 - for gradient(with purple)
+#fc444a - for "Somewhere" - kind of red + pink
+#5e7bea - for donate button (sky color)
+#36bae1 - for sky gradient
+#bfc5d4 - for hover
 */
 
-@font-face{
+@font-face {
     font-family: TW-R;
     src: url(assets/fonts/TitilliumWeb-Regular.ttf)
 }
 
-@font-face{
+@font-face {
+    font-family: TW-B;
+    src: url(assets/fonts/TitilliumWeb-Bold.ttf)
+}
+
+@font-face {
     font-family: TW-L;
     src: url(assets/fonts/TitilliumWeb-Light.ttf)
 }
 
-@font-face{
+@font-face {
     font-family: TW-EL;
     src: url(assets/fonts/TitilliumWeb-ExtraLight.ttf)
 }
 
-@font-face{
+@font-face {
     font-family: TW-Bl;
     src: url(assets/fonts/TitilliumWeb-Black.ttf)
 }
 
-@font-face{
+@font-face {
     font-family: Malaga;
-    src: url(assets/fonts/Malaga-Narrow-OT-Reg-Italic.htm)
+    src: url(assets/fonts/Malaga-Narrow-OT-Reg-Italic.otf)
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
+    font-family: TW-R;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    padding: 52px;
+    color: #858688;
+}
+
+.header-nav {
+    display: grid;
+    grid-template: repeat(2, 56px) / 4fr 2fr 2fr;
+    margin-top: 18.8px;
+}
+
+.header li {
+    display: inline;
+}
+
+h1 {
+    font-family: TW-B;
+    font-weight: bold;
+    margin-left: 22%;
+    letter-spacing: -0.99px;
+}
+
+.color-word {
+    font-family: TW-B;
+    color: #5b4295;
+}
+
+.nav-bar {
+    margin-top: 13px;
+    transition: 0.2s all ease;
+}
+
+.nav-bar ul {
+    margin-left: 6.7%;
+}
+
+.nav-bar ul li:not(:first-child) {
+    margin-left: 5.5%;
+    letter-spacing: 0.2px;
+}
+
+.nav-bar ul li:nth-child(n+4) {
+    margin-left: 21px;
+}
+
+.nav-bar a:hover {
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+    font-weight: 800;
+    transition: 0.2s all ease;
+    text-decoration: line-through;
+}
+
+.log-btns {
+    align-self: center;
+    padding-left: 15%;
+    margin-top: -6px;
+}
+
+button {
+    border: none;
+    background: none;
+    font-weight: bold;
+}
+
+.log-in {
+    color: black;
+}
+
+.log-in span {
+    margin-left: 6px;
+    font-size: 15px;
+    word-spacing: 1px;
+    letter-spacing: 0.8px;
+}
+
+.log-in i {
+    color: #5b4295;
+    font-size: 15px;
+}
+
+.log-in:hover {
+    cursor: pointer;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    background: red;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px 10px red;
+}
+
+.log-in:hover i {
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.sign-up {
+    position: relative;
+    top: 2px;
+    margin-left: 19px;
+    height: 42px;
+    width: 94px;
+    background-image: linear-gradient(to bottom right, #451a6b, #6276cd);
+    border-radius: 10rem;
+    box-shadow: 0 10px 20px 0px #7384bb;
+}
+
+.sign-up span {
+    position: relative;
+    top: -2px;
+    left: -1px;
+    font-family: TW-B;
+    font-size: 16px;
+    word-spacing: 0px;
+    letter-spacing: 0.4px;
+    color: white;
+}
+
+.sign-up:hover {
+    cursor: pointer;
+    background-image: none;
+    border-radius: none;
+    border: none;
+    box-shadow: none;
+}
+
+.sign-up:hover span {
+    color: white;
+    text-shadow: 0px 1px 1px white;
+    background: #451a6b;
+    border: 1px #451a6b solid;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px 10px #451a6b;
+}
+
+.language-list {
+    margin-left: 22%;
+    margin-top: 2px;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+}
+
+.language-list li:nth-child(1) {
+    font-weight: 800;
+    color: black;
+}
+
+.language-list li:hover {
+    cursor: pointer;
+    font-weight: 800;
+    color: black;
+}
+
+.language-list :nth-child(n+2) {
+    margin-left: 12px;
+    letter-spacing: 0.1px;
+}
+
+.language-list :nth-child(n+2)::before {
+    content: " /  ";
+    position: relative;
+    right: 6px;
+}
+
+.language-list :nth-child(n+2):hover::before {
+    color: #858688;
+    font-weight: 400;
+}
+
+.header-content {
+    background: url(assets/header-bg.png) center no-repeat;
+    height: 622px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-topic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 116px;
+    color: #636363;
+}
+
+.header-topic h2 {
+    font-size: 3.65rem;
+    word-spacing: 1px;
+    letter-spacing: 1.7px;
+}
+
+.header-topic p {
+    font-size: 2.3rem;
+    position: relative;
+    top: -8px;
+}
+
+.header-topic p span {
+    color: red;
+}
+
+.bg-for-btns{
+    background: url(assets/create-bg.png);
+    background-position: -18px 29px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 3px;
+    /* width: 100%; */
+    top: 51px;
+    display: flex;
+    width: 602px;
+    height: 70px;
+}
+
+.topic-btns {
+    display: grid;
+    grid-template: 1fr / 246px 46px 46px;
+    grid-gap: 25px;
+    color: white;
+    margin: 0 auto;
+}
+
+.create {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #6c7498, #5f2e69);
+    border-radius: 10rem;
+    text-align: center;
+    box-shadow: 0 6px 13px 3px rgba(64, 79, 154, 0.84);
+    height: 56px;
+    width: 246px;
+    position: relative;
+    top: 7px;
+}
+
+.create span {
+    position: relative;
+    top: -1px;
+    left: 0px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+}
+
+.app-store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 46px;
+    height: 46px;
+    background: rgba(95, 46, 105, 0.85);
+    border-radius: 50%;
+}
+
+.app-store i {
+    position: relative;
+    top: 0px;
+    left: -1px;
+    font-size: 23px;
+}
+
+.google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    position: relative;
+    left: -4px;
+    width: 46px;
+    height: 46px;
+    background: rgba(95, 46, 105, 0.85);
+    border-radius: 50%;
+}
+
+.google i {
+    position: relative;
+    font-size: 20px;
 }
 
 
@@ -50,3 +344,22 @@ color="#bfc5d4" - for hover
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+height: 40px;
+width: 94px;
+color: #5b4295;
+ */
