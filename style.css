@@ -655,10 +655,9 @@ button {
 .device-content{
     height: 230px;
     width: 450px;
-    position: relative;
-    right: 17px;
-    top: 7px;
+    margin: 14px 34px 0 0;
     text-align: right;
+    color: #535353;
     z-index: 2;
 }
 
@@ -673,6 +672,7 @@ button {
     position: relative;
     top: 8px;
     right: 5px;
+    color: #959393;
     letter-spacing: 0.1px;
     word-spacing: 0.4px;
     line-height: 22px;
@@ -717,14 +717,14 @@ button {
   }
 
 .device-content::after{
+    content: "";
+    background: url(assets/platforms.png);
     width: 578px;
     height: 670px;
     displaY: block;
-    left: 294px;
-    top: -274px;
     position: absolute;
-    content: "";
-    background: url(assets/platforms.png);
+    right: 14vw;
+    top: -12.47vh;
     z-index: -1;
 }
 
