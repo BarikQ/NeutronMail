@@ -55,6 +55,17 @@ a {
     color: black;
 }
 
+button{
+    transition: 0.3s all ease;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translate(0px, -5px) scale(1.05);
+    transition: 0.3s all ease;
+    box-shadow: 0px 5px 15px 3px black;
+}
+
 body {
     padding: 52px;
     color: #858688;
@@ -199,6 +210,7 @@ button {
     font-size: 14px;
     letter-spacing: 0.8px;
     color: #a3a3a3;
+    transition: 0.2s all ease;
 }
 
 .language-list > input{
@@ -216,7 +228,7 @@ button {
     right: 6px;
 }
 
-.language-controls :nth-child(n+2):hover::before {
+.language-controls :hover::before {
     color: #858688;
     font-weight: 400;
 }
@@ -230,9 +242,11 @@ button {
     font-weight: 800;
     color: #959595;
     border-bottom: 1px solid #959595;
+    transform: translate(0px, 3px);
+    transition: 0.2s all ease;
 }
 
-.language-controls label:hover,
+.language-controls label:hover::before,
 #language1:checked ~ .language-controls label:nth-of-type(1)::before,
 #language2:checked ~ .language-controls label:nth-of-type(2)::before,
 #language3:checked ~ .language-controls label:nth-of-type(3)::before,
@@ -744,8 +758,20 @@ button {
 }
 
 .purchase-block{
-    padding-top: 7.28vh;
+    padding-top: 7.16vh;
+    padding-bottom: 8.9vh;
     background: linear-gradient(to right, #fcfcfc, #f0f0f0);
+}
+
+.purchase-content:before{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 72.86vw;
+    position: relative;
+    background: #b9b9b9;
+    top: -62px;
+    left: -8.5vw;
 }
 
 .purchase-content{
@@ -755,6 +781,7 @@ button {
 }
 
 .purchase-head > h2{
+    color: #535353;
     font-size: 2.4rem;
     font-weight: 400;
     letter-spacing: -0.8px;
@@ -762,12 +789,99 @@ button {
 }
 
 .purchase-head > p{
+    color: #7c7c7c;
     font-size: 1.855rem;
     position: relative;
     top: -13px;
     left: -2px;
     word-spacing: -0.6px;
 }
+
+.purchase-btns{
+    display: grid;
+    grid-template: 1fr / 246px 166px;
+    justify-content: center;
+    grid-gap: 50px;
+    margin-top: 20px;
+}
+
+.purchase-btns > button{
+    height: 56px;
+    border-radius: 10rem;
+    padding-bottom: 2px;
+    color: white;
+}
+
+.upgrade{
+    width: 246px;
+    background: linear-gradient(to right, #646c92, #5f2f6a);
+    box-shadow: 1px 4px 12px 3px #6b76a6;
+}
+
+.upgrade span{
+    font-size: 17.1px;
+    position: relative;
+    left: 2.9px;
+    letter-spacing: 1.1px;
+    word-spacing: -0.97px;
+}
+
+.upgrade i{
+    position: relative;
+    left: -2px;
+    top: -1px;
+    font-size: 1.04rem;
+}
+
+.donate{
+    width: 166px;
+    background: linear-gradient(to right, #35bbe0, #5e7bea);
+    box-shadow: 1px 4px 12px 3px #88d6d1;
+}
+
+.donate span{
+    font-size: 17.1px;
+    position: relative;
+    left: 5.7px;
+    letter-spacing: 1.25px;
+    word-spacing: -0.97px;
+}
+
+.donate i{
+    position: relative;
+    left: 0px;
+    top: 1px;
+    font-size: 1.1rem;
+}
+
+.sponsors-list{
+    text-align: right;
+    padding-top: 1.3vh;
+    padding-bottom: 16vh;
+    background: linear-gradient(to right, #fcfcfc, #f0f0f0);
+}
+
+.sponsors-container{
+    max-width: 48.5vw;
+    margin: 0 auto;
+    position: relative;
+    left: 1.63vw;
+    overflow: hidden;
+}
+
+.sponsors-container > p{
+    font-size: 15px;
+    position: relative;
+    top: 4px;
+    right: 20px;
+    letter-spacing: -0.32px;
+}
+
+.sponsors-container > img{
+    position: relative;
+    top: 1px;
+}
+
 
 
 
