@@ -41,12 +41,21 @@
                 </button>
             </div>
 
-            <ul class="language-list">
-                <li>English</li>
-                <li>French</li>
-                <li>Italian</li>
-                <li>Polish</li>
-            </ul>
+            <div class="language-list">
+
+                <input type="radio" name="language" id="language1" checked>
+                <input type="radio" name="language" id="language2">
+                <input type="radio" name="language" id="language3">
+                <input type="radio" name="language" id="language4">
+
+                <div class="language-controls">
+                    <label for="language1">English</label>
+                    <label for="language2">French</label>
+                    <label for="language3">Italian</label>
+                    <label for="language4">Polish</label>
+                </div>
+                
+            </div>
 
         </div>
 
@@ -222,7 +231,25 @@
 
         </div>
 
-        <div class="purchase-block"></div>
+        <div class="purchase-block">
+            <div class="purchase-content">
+                <div class="purchase-head">
+                    <h2>Privacy is a fundamental human right.</h2>
+                    <p>Your support helps us to protect privacy world-wide</p>
+                </div>
+                
+                <div class="purchase-btns">
+                    <button class="upgrade">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <span>Upgrade to Paid Plan</span>
+                    </button>
+                    <button class="donate">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Donate</span>
+                    </button>
+                </div>   
+            </div>
+        </div>
 
         <div class="sponsors-list"></div>
 

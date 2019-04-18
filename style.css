@@ -18,7 +18,7 @@
     font-family: TW-B;
     src: url(assets/fonts/TitilliumWeb-Bold.ttf)
 }
-
+/* 
 @font-face {
     font-family: TW-L;
     src: url(assets/fonts/TitilliumWeb-Light.ttf)
@@ -32,16 +32,11 @@
 @font-face {
     font-family: TW-Bl;
     src: url(assets/fonts/TitilliumWeb-Black.ttf)
-}
+} */
 
 @font-face {
     font-family: Malaga;
     src: url(assets/fonts/MalagaOT-RegItalic.otf)
-}
-
-@font-face {
-    font-family: Malaga-Narrow;
-    src: url(assets/fonts/Malaga-Narrow-OT-Reg-Italic.otf)
 }
 
 @font-face {
@@ -79,7 +74,7 @@ h1 {
     font-family: TW-B;
     font-weight: bold;
     margin-left: 22%;
-    letter-spacing: -0.99px;
+    letter-spacing: -1.0px;
 }
 
 .color-word {
@@ -196,39 +191,57 @@ button {
     box-shadow: 0px 3px 5px 10px #451a6b;
 }
 
+/*////////////////////////////////////// language bar /////////////////////////////////////////////////////////////*/
+
 .language-list {
-    margin-left: 22%;
+    margin-left: 22.1%;
     margin-top: 2px;
     font-size: 14px;
     letter-spacing: 0.8px;
+    color: #a3a3a3;
 }
 
-.language-list li:nth-child(1) {
-    font-weight: 800;
-    color: black;
+.language-list > input{
+    display: none;
 }
 
-.language-list li:hover {
-    cursor: pointer;
-    font-weight: 800;
-    color: black;
-}
-
-.language-list :nth-child(n+2) {
+.language-controls :nth-child(n+2) {
     margin-left: 12px;
     letter-spacing: 0.1px;
 }
 
-.language-list :nth-child(n+2)::before {
+.language-controls :nth-child(n+2)::before {
     content: " /  ";
     position: relative;
     right: 6px;
 }
 
-.language-list :nth-child(n+2):hover::before {
+.language-controls :nth-child(n+2):hover::before {
     color: #858688;
     font-weight: 400;
 }
+
+.language-controls label:hover,
+#language1:checked ~ .language-controls label:nth-of-type(1),
+#language2:checked ~ .language-controls label:nth-of-type(2),
+#language3:checked ~ .language-controls label:nth-of-type(3),
+#language4:checked ~ .language-controls label:nth-of-type(4){
+    cursor: pointer;
+    font-weight: 800;
+    color: #959595;
+    border-bottom: 1px solid #959595;
+}
+
+.language-controls label:hover,
+#language1:checked ~ .language-controls label:nth-of-type(1)::before,
+#language2:checked ~ .language-controls label:nth-of-type(2)::before,
+#language3:checked ~ .language-controls label:nth-of-type(3)::before,
+#language4:checked ~ .language-controls label:nth-of-type(4)::before{
+    font-weight: 400;
+    color: #a3a3a3;
+}
+
+/*////////////////////////////////////// language bar /////////////////////////////////////////////////////////////*/
 
 .header-content {
     background: url(assets/header-bg-1.png) center no-repeat;
@@ -540,6 +553,7 @@ button {
 /*//////////////////////////////////// slider ////////////////////////////////////////*/
 
 .wrapper{
+    z-index: 3;
     height: 160px;
     position: relative;
     left: 18.97vw;
@@ -577,6 +591,7 @@ button {
 #slide1:checked ~ .controls label:nth-of-type(1),
 #slide2:checked ~ .controls label:nth-of-type(2),
 #slide3:checked ~ .controls label:nth-of-type(3){
+    cursor: pointer;
     z-index: 1;
     background: #101010;
     height: 13px;
@@ -727,4 +742,47 @@ button {
     top: -12.47vh;
     z-index: -1;
 }
+
+.purchase-block{
+    padding-top: 7.28vh;
+    background: linear-gradient(to right, #fcfcfc, #f0f0f0);
+}
+
+.purchase-content{
+    max-width: 35vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.purchase-head > h2{
+    font-size: 2.4rem;
+    font-weight: 400;
+    letter-spacing: -0.8px;
+    word-spacing: 0.5px;
+}
+
+.purchase-head > p{
+    font-size: 1.855rem;
+    position: relative;
+    top: -13px;
+    left: -2px;
+    word-spacing: -0.6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
