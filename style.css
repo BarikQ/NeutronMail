@@ -36,6 +36,13 @@ a {
     color: black;
 }
 
+main a:hover, 
+footer a:hover,
+aside a:hover{
+    transform: scale(1.05);
+    color: tomato;
+}
+
 button {
     transition: 0.3s all ease;
 }
@@ -1504,4 +1511,3 @@ button {
         display: none;
     }
 }
-
