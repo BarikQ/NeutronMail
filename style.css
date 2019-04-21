@@ -10,29 +10,21 @@
 */
 
 @font-face {
-    font-family: TW-R;
+    font-family: 'TW-R';
     src: url(assets/fonts/TitilliumWeb-Regular.ttf)
 }
 
 @font-face {
     font-family: TW-B;
-    src: url(assets/fonts/TitilliumWeb-Bold.ttf)
-}
-/* 
-@font-face {
-    font-family: TW-L;
-    src: url(assets/fonts/TitilliumWeb-Light.ttf)
+    font-style: normal;
+    font-weight: 700;
+    src: url(assets/fonts/TitilliumWeb-Bold.ttf);
 }
 
-@font-face {
-    font-family: TW-EL;
-    src: url(assets/fonts/TitilliumWeb-ExtraLight.ttf)
-}
-
-@font-face {
+@font-face{
     font-family: TW-Bl;
-    src: url(assets/fonts/TitilliumWeb-Black.ttf)
-} */
+    src: url(assets/fonts/TitilliumWeb-Black.ttf);
+}
 
 @font-face {
     font-family: Malaga;
@@ -67,8 +59,12 @@ button:hover{
 }
 
 body {
-    padding: 52px;
+    /* padding: 52px; */
     color: #858688;
+}
+
+.header{
+    padding: 52px 54px 0 51px;
 }
 
 .header-nav {
@@ -375,9 +371,10 @@ button {
     display: grid;
     grid-template: 1fr / repeat(3, 21vw);
     grid-gap: 1.77vw;
-    margin: 5.6% 0vw;
     justify-content: center;
+    margin: 5.3% 0vw;
     margin-left: 6.5vw;
+    padding: 0 56px 0 53px;
 }
 
 .advantages-head {
@@ -485,6 +482,7 @@ button {
 }
 
 .physical-security {
+    padding: 0 40px 0 50px;
     max-width: 634px;
     margin: 0vw auto;
     text-align: right;
@@ -522,8 +520,8 @@ button {
     height: 60px;
     margin: 0 auto;
     position: relative;
-    left: 13.4%;
-    top: 32px;
+    left: 12.6%;
+    top: 31px;
     word-spacing: 0.1px;
     letter-spacing: 0.3px;
     border: 1px solid #b9b9b9;
@@ -559,8 +557,13 @@ button {
 }
 
 .journal-list {
-    margin: 7.5vh 0 0 1.1vw;
-    overflow: hidden;
+    margin: 7.5vh 0 0 3.75vw;
+    padding-bottom: 0.7vh;
+    width: 49vw;
+}
+
+.journals-container{
+    display: flex;
 }
 
 
@@ -570,7 +573,7 @@ button {
     z-index: 3;
     height: 160px;
     position: relative;
-    left: 18.97vw;
+    left: 21.6vw;
     top: 6.3vh;
     width: 570px;
 }
@@ -675,7 +678,7 @@ button {
     display: flex;
     height: 530px;
     margin-top: -8px;
-    background: linear-gradient(to right, #fcfcfc, #f0f0f0);
+    background: linear-gradient(to bottom left, #eeeeee, #ffffff);
     /* clip-path: polygon(0 38.5%, 100% 0, 100% 100%, 0 100%); */
     justify-content: center;
     align-items: center;
@@ -735,13 +738,13 @@ button {
 .device::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -8px;
     display: block;
     box-sizing: border-box;
     width: 100%;
     height: 200px;
-    border-top: 200px solid #fff;
-    border-right: 93.7vw solid transparent;
+    border-top: 216px solid #fff;
+    border-right: 99vw solid transparent;
     z-index: 0;
   }
 
@@ -752,15 +755,15 @@ button {
     height: 670px;
     displaY: block;
     position: absolute;
-    right: 14vw;
+    right: 16.76vw;
     top: -12.47vh;
     z-index: -1;
 }
 
 .purchase-block{
     padding-top: 7.16vh;
-    padding-bottom: 8.9vh;
-    background: linear-gradient(to right, #fcfcfc, #f0f0f0);
+    padding-bottom: 8.76vh;
+    background: linear-gradient(to bottom left, #fafafa, #ffffff);
 }
 
 .purchase-content:before{
@@ -842,53 +845,298 @@ button {
 .donate span{
     font-size: 17.1px;
     position: relative;
-    left: 5.7px;
-    letter-spacing: 1.25px;
-    word-spacing: -0.97px;
+    left: 4.7px;
+    letter-spacing: 0.9px;
 }
 
 .donate i{
     position: relative;
-    left: 0px;
+    left: -2px;
     top: 1px;
     font-size: 1.1rem;
 }
 
 .sponsors-list{
     text-align: right;
-    padding-top: 1.3vh;
     padding-bottom: 16vh;
-    background: linear-gradient(to right, #fcfcfc, #f0f0f0);
+    background: #ffffff;
 }
 
 .sponsors-container{
-    max-width: 48.5vw;
+    width: 52vw;
     margin: 0 auto;
     position: relative;
-    left: 1.63vw;
-    overflow: hidden;
 }
 
-.sponsors-container > p{
+.spon-p{
     font-size: 15px;
     position: relative;
-    top: 4px;
-    right: 20px;
+    top: 15px;
+    right: 23px;
     letter-spacing: -0.32px;
 }
 
-.sponsors-container > img{
+.sponsors-imagies{
     position: relative;
-    top: 1px;
+    top: 12px;
 }
 
+.sponsors-container::before{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 72.9vw;
+    background: #b9b9b9;
+    position: relative;
+    right: 20.9vw;
+}
 
+.sponsors-container::after{
+    content: "";
+    display: block;
+    height: 47.1vh;
+    width: 1px;
+    background: #b9b9b9;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 
+.sponsors-imagies img:nth-of-type(1){
+    position: relative;
+    right: -60px;
+}
 
+.sponsors-imagies img:nth-of-type(2){
+    position: relative;
+    right: -58px;
+}
 
+.sponsors-imagies img:nth-of-type(3){
+    position: relative;
+    right: -53px;
+}
 
+.sponsors-imagies img:nth-of-type(4){
+    position: relative;
+    right: -50px;
+}
 
+.sponsors-imagies img:nth-of-type(5){
+    position: relative;
+    right: -46px;
+}
 
+.sponsors-imagies img:nth-of-type(6){
+    position: relative;
+    right: -43px;
+}
+
+.sponsors-imagies img:nth-of-type(7){
+    position: relative;
+    right: -39px;
+}
+
+.footer-container{
+    max-width: 62.5vw;
+    height: 332px;
+    position: relative;
+    padding-top: 20px;
+    right: -13.06vw;
+}
+
+.footer-lists{
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.first-column{
+    border-left: 1px solid #b9b9b9;
+    height: 131px;
+}
+
+.contacts{
+    position: relative;
+    top: -7px;
+    left: 19px;
+    font-size: 14px;
+    letter-spacing: 0.17px;
+    color: #5c5c5c;
+    font-weight: 600;
+}
+
+.contacts > p:nth-child(2){
+    position: relative;
+    top: 2px;
+}
+
+.contacts > p:nth-child(3){
+    position: relative;
+    top: 4px;
+}
+
+.contacts > p:nth-child(4){
+    position: relative;
+    top: 29px;
+}
+
+.contacts a{
+    letter-spacing: 0.15px;
+    font-family: TW-B;
+    color: #535353;
+}
+
+.contacts > p:nth-child(4) a{
+    position: relative;
+    top: 2px;
+    left: 1px;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    color: #535353;
+    text-decoration: underline;
+    text-decoration-color: #d6d6d6;
+}
+
+.footer-lists{
+    text-align: right;
+}
+
+.footer-lists > .column:nth-child(1){
+    align-items: center;
+    position: relative;
+    top: -7px;
+    right: 16px;
+}
+
+.footer-lists ul{
+    list-style-type: none;
+    text-align: right;
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    line-height: 23px;
+    word-spacing: 4px;
+    position: relative;
+    top: 22px;
+    right: 1px;
+}
+
+.about_company::after{
+    content: "";
+    display: block;
+    height: 315px;
+    width: 1px;
+    position: absolute;
+    background: #b9b9b9;
+    right: 37px;
+    top: 3px;
+}
+
+.footer-lists li::after{
+    content: " •";
+}
+
+.footer-lists h4{
+    letter-spacing: 0.9px;
+    font-family: TW-B;
+    font-size: 17px;
+}
+
+.footer-lists > .column:nth-child(2){
+    align-items: flex-end; 
+    position: relative;
+    top: -6px;
+    right: 0px;
+}
+
+.legal_list {
+    position: relative;
+    top: -1px;
+    right: 27px;
+}
+
+.legal_list ul{
+    top: 22px;
+    right: 2px;
+    letter-spacing: 0.1px;
+    word-spacing: 2px;
+}
+
+.footer-lists > .column:nth-child(3){
+    align-items: flex-end;
+    position: relative;
+    top: -7px;
+    right: 25px;
+}
+
+.neutron_mail h4{
+    position: relative;
+    right: 1px;
+    letter-spacing: 0.7px;
+}
+
+.neutron_mail ul{
+    letter-spacing: 0.1px;
+    word-spacing: 2px;
+    top: 22px;
+    right: 2px;
+}
+
+.row-2{
+    position: relative;
+    margin-top: 9.6vh;
+    font-size: 12px;
+    left: 1px;
+}
+
+.social-bar a{
+    text-decoration: underline;
+    text-decoration-color: #d6d6d6;
+}
+
+.social-bar :nth-child(n+2) {
+    margin-left: 19px;
+    letter-spacing: 0.1px;
+}
+
+.social-bar :nth-child(n+2)::before {
+    content: " / ";
+    position: relative;
+    right: 10px;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.row-3{
+    margin-top: 11px;
+    font-size: 13px;
+    position: relative;
+    left: 0px;
+}
+
+.copyright i{
+    font-size: 7px;
+    position: relative;
+    top: -2px;
+}
+
+.copyright span{
+    font-family: TW-B;
+    letter-spacing: -0.4px;
+    word-spacing: -0.5px;
+}
 
 
 
