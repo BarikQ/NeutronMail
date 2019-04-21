@@ -335,7 +335,6 @@ button {
 .app-store {
     display: flex;
     justify-content: center;
-    align-items: center;
     align-self: center;
     width: 46px;
     height: 46px;
@@ -354,7 +353,6 @@ button {
 .google {
     display: flex;
     justify-content: center;
-    align-items: center;
     align-self: center;
     position: relative;
     left: -4px;
@@ -1498,7 +1496,21 @@ button {
 }
 
 @media(max-width: 420px){
+    .advantages-head{
+        grid-template: 50px 110px / 1fr;
+    }
+
+    .footer-container{
+        grid-template-rows: 145px 1fr 50px 50px;
+    }
+
+    .slider{
+        width: 90%;
+    }
+
     .footer-lists{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "abt leg nm";
         grid-gap: 0px;
         text-align: center;
     }
@@ -1509,5 +1521,21 @@ button {
 
     .footer-lists li::after{
         display: none;
+    }
+
+    .device-content{
+        width: inherit;
+        text-align: center;
+        margin: 0;
+    }
+
+    .device-btns{
+        grid-template: 1fr 1fr / 180px;
+        float: none;
+        margin-left: 70px;
+    }
+
+    .app-store-load, .google-load{
+        background-repeat: no-repeat;
     }
 }
