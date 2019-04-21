@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Neutron Mail</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/css/all.css">
@@ -20,16 +19,22 @@
                 neutron<span class="color-word">Mail</span>
             </h1>
 
+            <input type="checkbox" class="head-btn" id="nav-b">
+            <label for="nav-b"><span class="btn-for-nav"></span></label>
+
             <nav class="nav-bar">
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Security</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Donate</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#security">Security</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#donate">Donate</a></li>
                 </ul>
             </nav>
+
+            <input type="checkbox" class="head-btn" id="log-b">
+            <label for="log-b"><span class="btn-for-log"></span></label>
 
             <div class="log-btns">
                 <button class="log-in">
@@ -40,6 +45,9 @@
                     <span>Sign up</span>
                 </button>
             </div>
+
+            <input type="checkbox" class="head-btn" id="lang-b">
+            <label for="lang-b"><span class="btn-for-lang"></span></label>
 
             <div class="language-list">
 
@@ -54,7 +62,7 @@
                     <label for="language3">Italian</label>
                     <label for="language4">Polish</label>
                 </div>
-                
+
             </div>
 
         </div>
@@ -82,7 +90,7 @@
     </header>
     <main class="main">
 
-        <div class="advantages-block">
+        <div class="advantages-block" id="about">
             <div class="privacy adv-column">
                 <div class="advantages-head">
                     <span>
@@ -102,7 +110,7 @@
                     protected by strict Swiss privacy laws.
                 </p>
             </div>
-            <div class="encryption adv-column">
+            <div class="encryption adv-column line">
                 <div class="advantages-head">
                     <span>
                         <img src="assets/lock.png" alt="image">
@@ -144,7 +152,7 @@
             </div>
         </div>
 
-        <div class="physical-security">
+        <div class="physical-security" id="security">
             <h2>
                 Physical Security
             </h2>
@@ -160,18 +168,18 @@
             <span>Learn more about our security features</span>
         </div>
 
-        <div class="journal-list">
+        <div class="journal-list" id="careers">
             <div class="journals-container">
-                <img src="assets/r1.png">
-                <img src="assets/r2.png">
-                <img src="assets/r3.png">
-                <img src="assets/r4.png">
-                <img src="assets/r5.png">
-                <img src="assets/r6.png">
+                <img src="assets/r1.png" alt="image description">
+                <img src="assets/r2.png" alt="image description">
+                <img src="assets/r3.png" alt="image description">
+                <img src="assets/r4.png" alt="image description">
+                <img src="assets/r5.png" alt="image description">
+                <img src="assets/r6.png" alt="image description">
             </div>
         </div>
 
-        <div class="reviews-block wrapper">
+        <div class="reviews-block wrapper" id="blog">
 
             <input type="radio" name="point" id="slide1" checked>
             <input type="radio" name="point" id="slide2">
@@ -183,25 +191,25 @@
                         A new email service being developed
                         by a group from MIT and CERN
                         promises to bring secure,
-                        encrypted email to the masses and 
+                        encrypted email to the masses and
                         keep sensitive information away
                         from prying eyes.
                     </p>
-                    <figcaption>Boston Herald</figcaption>
+                    <h4>Boston Herald</h4>
                 </div>
                 <div class="slides slide2">
                     <p>
                         Voda - eto jisn'!
                     </p>
-                    <figcaption>Evgeniy Norrion</figcaption>
+                    <h4>Evgeniy Norrion</h4>
                 </div>
                 <div class="slides slide3">
                     <p>
                         Lorem ipsum dolor and etc...
                     </p>
-                    <figcaption>Sasha Tichon</figcaption>
+                    <h4>Sasha Tichon</h4>
                 </div>
-            </div>	
+            </div>
 
             <div class="controls">
                 <label for="slide1"></label>
@@ -211,7 +219,7 @@
 
         </div>
 
-        <div class="device">
+        <div class="device" id="support">
 
             <div class="device-content">
                 <h2>
@@ -219,9 +227,9 @@
                 </h2>
 
                 <p>
-                    The NeutronMail inbox is optimized 
-                    for productivity. Each detail within our 
-                    secure email service is optimized to help 
+                    The NeutronMail inbox is optimized
+                    for productivity. Each detail within our
+                    secure email service is optimized to help
                     you better read, organize, and send email.
                 </p>
 
@@ -234,13 +242,13 @@
 
         </div>
 
-        <div class="purchase-block">
+        <div class="purchase-block" id="donate">
             <div class="purchase-content line">
                 <div class="purchase-head">
                     <h2>Privacy is a fundamental human right.</h2>
                     <p>Your support helps us to protect privacy world-wide</p>
                 </div>
-                
+
                 <div class="purchase-btns">
                     <button class="upgrade">
                         <i class="fas fa-cloud-upload-alt"></i>
@@ -250,7 +258,7 @@
                         <i class="fas fa-dollar-sign"></i>
                         <span>Donate</span>
                     </button>
-                </div>   
+                </div>
             </div>
         </div>
 
@@ -258,13 +266,13 @@
             <div class="sponsors-container line">
                 <p class="spon-p">Those, who help us secure your privacy</p>
                 <div class="sponsors-imagies">
-                    <img src="assets/h1.png">
-                    <img src="assets/h2.png">
-                    <img src="assets/h3.png">
-                    <img src="assets/h4.png">
-                    <img src="assets/h5.png">
-                    <img src="assets/h6.png">       
-                    <img src="assets/h7.png">                 
+                    <img src="assets/h1.png" alt="image description">
+                    <img src="assets/h2.png" alt="image description">
+                    <img src="assets/h3.png" alt="image description">
+                    <img src="assets/h4.png" alt="image description">
+                    <img src="assets/h5.png" alt="image description">
+                    <img src="assets/h6.png" alt="image description">
+                    <img src="assets/h7.png" alt="image description">
                 </div>
             </div>
         </div>
@@ -273,95 +281,73 @@
     <footer class="footer">
         <div class="footer-container">
 
-            <div class="row row-1">
-
-                <div class="column first-column">
-                    <div class="contacts">
-                        <p>General: <a href="mailto:@neutronmail.ch">contact@neutronmail.ch</a></p>
-                        <p>Media: <a href="mailto:@neutronmail.ch">media@neutronmail.ch</a></p>
-                        <p>Security: <a href="mailto:@neutronmail.ch">security@neutronmail.ch</a></p>
-                        <p>For support inquiries, please visit<br><a href="https://www.neutronmail.com/support">neutronmail.com/support</a></p>
-                    </div>
-                </div>
-
-                <div class="column second-column">
-                    <div class="footer-lists">
-
-                        <div class="column">
-                            <div class="about_company">
-                                <h4>Company</h4>
-                                <ul>
-                                    <li><a href="">Blog</a></li>
-                                    <li><a href="">Team</a></li>
-                                    <li><a href="">Careers</a></li>
-                                    <li><a href="">Support</a></li>
-                                    <li><a href="">Donate</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="column">
-                            <div class="legal_list">
-                                <h4>Legal</h4>
-                                <ul>
-                                    <li><a href="">Imprint</a></li>
-                                    <li><a href="">Privacy Policy</a></li>
-                                    <li><a href="">Terms & Conditions</a></li>
-                                    <li><a href="">Transparency Report</a></li>
-                                    <li><a href="">Report Abuse</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="column">
-                            <div class="neutron_mail">
-                                <h4>NeutronMail</h4>
-                                <ul>
-                                    <li><a href="">Pricing</a></li>
-                                    <li><a href="">Security</a></li>
-                                    <li><a href="">Shop</a></li>
-                                    <li><a href="">Press/Media Kit</a></li>
-                                    <li><a href="">Onion Site</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                
+            <div class="contacts line">
+                <p>General: <a href="mailto:@neutronmail.ch">contact@neutronmail.ch</a></p>
+                <p>Media: <a href="mailto:@neutronmail.ch">media@neutronmail.ch</a></p>
+                <p>Security: <a href="mailto:@neutronmail.ch">security@neutronmail.ch</a></p>
+                <p>For support inquiries, please visit<br><a
+                        href="https://www.neutronmail.com/support">neutronmail.com/support</a></p>
             </div>
 
-            <div class="row row-2">
+            <div class="footer-lists">
 
-                <div class="column">
+                <div class="about_company line">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Donate</a></li>
+                    </ul>
+                </div>
 
-                    <div class="social-bar">
-                        <a href="">Facebook</a>
-                        <a href="">Twitter</a>
-                        <a href="">Google+</a>
-                        <a href="">Feedback Forum</a>
-                        <a href="">Reddit</a>
-                    </div>
+                <div class="legal_list">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Imprint</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Transparency Report</a></li>
+                        <li><a href="#">Report Abuse</a></li>
+                    </ul>
+                </div>
 
+                <div class="neutron_mail">
+                    <h4>NeutronMail</h4>
+                    <ul>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Press/Media Kit</a></li>
+                        <li><a href="#">Onion Site</a></li>
+                    </ul>
                 </div>
 
             </div>
 
-            <div class="row row-3">
 
-                <div class="column">
+            <div class="social-bar">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Google+</a>
+                <a href="#">Feedback Forum</a>
+                <a href="#">Reddit</a>
+            </div>
 
-                    <div class="copyright">
-                        <i class="far fa-copyright"></i>
-                        <span>2017 Neurton Technologies AG. All Rights Reserved.</span>
-                    </div>
-
-                </div>
-
+            <div class="copyright">
+                <i class="far fa-copyright"></i>
+                <span>2017 Neurton Technologies AG. All Rights Reserved.</span>
             </div>
 
         </div>
     </footer>
+
+    <aside class="aside-links">
+        <a href="#"><i class="fab fa-google-plus-square"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+    </aside>
 </body>
 
 </html>
