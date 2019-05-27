@@ -1539,4 +1539,8 @@ button {
     .app-store-load, .google-load{
         background-repeat: no-repeat;
     }
+    
+    .spon-p {
+    right: 0;
+    }
 }
