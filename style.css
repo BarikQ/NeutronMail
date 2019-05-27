@@ -1385,6 +1385,7 @@ button {
     .bg-for-btns{
         background: none;
         width: inherit;
+        top: 15px;
     }
 
     .topic-btns{
@@ -1527,12 +1528,16 @@ button {
         width: inherit;
         text-align: center;
         margin: 0;
+        display: flex;
+        justify-content: center;
+        top: 0;
+        right: 0;
     }
 
     .device-btns{
         grid-template: 1fr 1fr / 180px;
         float: none;
-        margin-left: 70px;
+        justify-content: center;
     }
 
     .app-store-load, .google-load{
