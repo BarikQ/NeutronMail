@@ -1528,10 +1528,6 @@ button {
         width: inherit;
         text-align: center;
         margin: 0;
-        display: flex;
-        justify-content: center;
-        top: 0;
-        right: 0;
     }
 
     .device-btns{
